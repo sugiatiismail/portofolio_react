@@ -115,7 +115,7 @@ const Home = () => {
                                 </Grid>
                                 <Grid item xs >
                                     <Stack spacing={2} alignItems='center'>
-                                        <Box sx={{ width: isDesktop ? 400 : 200 }}>
+                                        <Box sx={{ width: isDesktop ? 400 : 200, mt: isDesktop ? 0 : 10 }}>
                                             <img style={{ width: '100%' }}
                                                 src="https://ismailhalawa.netlify.app/img/profil.png"
                                                 alt="new"
@@ -191,7 +191,7 @@ const Home = () => {
                         <Typography variant={isDesktop ? "h3" : "h4"} textAlign={'center'} mb={isDesktop ? 20 : 5} fontWeight={500}>Experience</Typography>
                         <Container>
                             <Grid container spacing={2}>
-                                <Grid item md={3} lg={3} sm={12} xs={12}>
+                                <Grid item md={3} lg={3} sm={12} xs={12}  >
                                     <Stack spacing={4}>
                                         <Typography variant="h5" fontWeight={500} >SKILLS:</Typography>
                                         <Stack direction={'row'} spacing={1}>
@@ -199,7 +199,7 @@ const Home = () => {
                                             <Typography variant="subtitle1" fontSize={18} >HTML</Typography>
                                         </Stack>
                                     </Stack>
-                                    <Stack direction={'row'} spacing={1}>
+                                    <Stack direction={'row'}  spacing={1}>
                                         <CheckCircleOutlineIcon sx={{ color: '#51c2e0' }} />
                                         <Typography variant="subtitle1" fontSize={18} >CSS</Typography>
                                     </Stack>
@@ -323,23 +323,26 @@ const Home = () => {
                     <Box paddingTop={18} >
                         <Container >
                             <Grid container spacing={1}>
-                                <Grid item xs={1.5}>
+                                <Grid item xs={2}>
                                     <Typography paddingLeft={1} fontSize='16px' color='#4D4D4D' fontWeight='bold'>Home</Typography>
                                     <Button href='#home' variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>Back to Top</Button>
                                 </Grid>
 
                                 <Grid item xs={3.7}>
-                                    <Typography paddingLeft={1} fontSize='16px' color='#4D4D4D' fontWeight='bold'>Contact us</Typography>
-                                    <Button variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>Jl Pertanian No 30, Dumai City</Button>
-                                    <Button variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>sugiatiismail@gmail.com</Button>
-                                    <Button variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>082386523307</Button>
+                                    <Typography  fontSize='16px' color='#4D4D4D' fontWeight='bold'>Contact us</Typography>
+                                    <Stack>
+                                    <Typography variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>Jl Pertanian No 30, Dumai City</Typography>
+                                    <Typography variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>sugiatiismail@gmail.com</Typography>
+                                    <Typography variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>082386523307</Typography>
+                                    </Stack>
                                 </Grid>
 
-                                <Grid item xs={2}>
+                                <Grid item xs={3}>
                                     <Typography fontSize='16px' color='#4D4D4D' fontWeight='bold'>Portfolio</Typography>
-                                    <Typography variant="caption">Cloning Sayur Box Website</Typography>
-                                    <Typography variant="caption">Make Website Hasanah Islamic Daycare</Typography>
-
+                                    <Stack>
+                                    <Typography variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>Cloning Sayur Box Website</Typography>
+                                    <Typography variant="text" sx={{ textTransform: 'none', color: '#4D4D4D' }}>Make Website Hasanah Islamic Daycare</Typography>
+                                    </Stack>
                                 </Grid>
 
                                 <Grid item xs>
